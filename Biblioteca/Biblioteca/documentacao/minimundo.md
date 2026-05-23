@@ -1,28 +1,10 @@
-Sistema de Biblioteca
-O sistema de biblioteca tem como objetivo gerenciar livros, usuários, funcionários e empréstimos.
+# Minimundo - Sistema de Biblioteca
 
-A biblioteca possui um conjunto de livros, onde cada livro está associado a um autor, uma editora e uma categoria.
-
-Cada livro pode possuir vários exemplares físicos, que representam as unidades disponíveis para empréstimo. Cada exemplar possui um estado de conservação e um status de disponibilidade.
-
-Os usuários podem realizar empréstimos de exemplares. Cada empréstimo é registrado com a data de saída e a data prevista de devolução.
-
-Os empréstimos são processados por funcionários, que são responsáveis pelo atendimento.
-
-Quando um exemplar é devolvido, é registrado em devoluções, contendo a data de entrega e o número de dias de atraso, caso exista.
-
-Se houver atraso na devolução, pode ser gerada uma multa, que possui um valor e um status de pagamento.
-
-Regras de Negócio
-
-Um livro pode ter vários exemplares
-
-Um usuário pode ter vários empréstimos
-
-Um empréstimo está ligado a um único exemplar
-
-Um empréstimo pode gerar uma devolução
-
-Uma devolução pode gerar uma multa
-
-Um funcionário pode registrar vários empréstimos
+A biblioteca tem como finalidade organizar e controlar o acervo de livros, além de gerenciar empréstimos realizados pelos usuários cadastrados no sistema.
+Os livros disponíveis na biblioteca possuem informações como título, ISBN, ano de publicação, autor, editora e categoria. Cada livro pode possuir vários exemplares físicos, permitindo que mais de um usuário tenha acesso à mesma obra em períodos diferentes.
+Os autores cadastrados possuem informações pessoais, como nome, nacionalidade e data de nascimento. Já as editoras armazenam dados relacionados ao nome, país de origem e contato.
+Os usuários do sistema podem consultar livros e realizar empréstimos de exemplares disponíveis. Cada empréstimo registra a data de saída e a previsão de devolução do exemplar.
+Os funcionários da biblioteca são responsáveis pelo cadastro de livros e exemplares, além do controle de devoluções e acompanhamento do estado de conservação dos materiais disponíveis no acervo.
+Quando um usuário devolve um exemplar após a data prevista, o sistema pode gerar uma multa referente ao atraso. As multas possuem informações sobre valor, situação de pagamento e data de quitação.
+O sistema também permite consultas administrativas, como verificação de livros cadastrados, usuários ativos, controle de multas pendentes, relatórios de empréstimos e acompanhamento das devoluções realizadas.
+Dessa forma, o banco de dados foi estruturado para facilitar a organização da biblioteca, melhorar o controle do acervo e tornar o gerenciamento de empréstimos mais eficiente.
